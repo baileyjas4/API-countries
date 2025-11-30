@@ -5,6 +5,7 @@
   --elements: hsl(0, 0%, 100%);
   --text: hsl(200, 15%, 8%);
   --input: hsl(0, 0%, 52%);
+  font-family: 'Courier New', Courier, monospace;
 }
 
 body.dark {
@@ -12,6 +13,7 @@ body.dark {
   --elements: hsl(209, 23%, 22%);
   --text: hsl(0, 0%, 100%);
   --input: hsl(0, 0%, 100%);
+  font-family: 'Courier New', Courier, monospace;
 }
 
  /* /Global Styles */ 
@@ -19,6 +21,7 @@ body.dark {
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  font-weight: 200;
   background: var(--bg);
   color: var(--text);
   transition: background 0.2s, color 0.2s;
