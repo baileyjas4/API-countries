@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Details</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- HEADER (Same as index.html for consistency) -->
+    <header class="header">
+        <div class="container">
+            <h1>Where in the world?</h1>
+            <button id="theme-toggle" class="theme-btn">
+                <i class="fa-regular fa-moon"></i> Dark Mode
+            </button>
+        </div>
+    </header>
+
+    <main class="container detail-container">
+        <!-- Back Button -->
+        <button onclick="window.history.back()" class="back-btn">
+            <i class="fa-solid fa-arrow-left"></i> Back
+        </button>
+        <!-- Container for the dynamic detail content -->
+        <div id="country-detail" class="detail-content">
+            <!-- JS will populate this -->
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
