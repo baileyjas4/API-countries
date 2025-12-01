@@ -3,35 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ALL Around The World</title>
-     <link rel="stylesheet" href="style.css" />  <script src="script.js" defer></script>
+    <title>All about the world</title>
+     <link rel="stylesheet" href="style.css"/>  
+     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap" rel="stylesheet"> <!-- came from project style guide -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> <!-- came from project style guide -->
+     <script src="script.js" defer></script>
 </head>
 <body>
+    <header class="header">
+      
+      <div class="container">
+        <h1>Where in the World?</h1>
+        <!-- this is where i added dark mode to my code (btn) -->
+         <button id="theme-toggle" class="theme-btn">
+         <i class="fa-regular fa-moon"></i> Dark Mode
+         </button>
+      </div>
 
-<header>
-    <h1>Where in the world?</h1>
-    <button id="theme-toggle"> Dark Mode</button>
-  </header>
+    </header>
 
-  <div class="controls">
-    <input
-      type="text"
-      id="search"
-      placeholder="Search for a country..."
-    />
-
-    <select id="region-filter">
-      <option value="all">Filter by Region</option>
-      <option value="Africa">Africa</option>
-      <option value="Americas">Americas</option>
-      <option value="Asia">Asia</option>
-      <option value="Europe">Europe</option>
-    </select>
-  </div>
-
-  <main>
-    <div class="countries-container"></div>
-  </main>
 
 </body>
 </html>
