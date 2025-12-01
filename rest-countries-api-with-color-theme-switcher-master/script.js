@@ -1,12 +1,42 @@
 const countriesContainer = document.querySelector(".countries-container");
 const searchInput = document.getElementById("search");
 const regionSelect = document.getElementById("region-filter");
-const themeToggle = document.getElementById("theme-toggle");
+const themeToggle = document.getElementById('theme-toggle');
 
 let allCountries = [];
 
+document.addEventListener('DOMContentLoaded' ,() => {
+  // i am checking my local storage for the theme
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'dark') {
+    body.classList.add('dark-mode');
+  }
 
-   // Fetch all countries
+})
+
+// Theme toggle (Light/Dark)
+
+themeToggle.addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
+  // Saving what mode we are in to local storage
+  if (document.body.classList.contains("dark-mode")) {
+    localStorage.setItem('theme', 'dark')
+  } else {
+    localStorage.setItem('theme', 'light')
+  }
+});
+
+
+
+
+
+
+
+
+
+
+
+// Fetch all countries
 
 async function getCountries() {
   const res = await fetch("https://restcountries.com/v3.1/all");
@@ -67,14 +97,4 @@ regionSelect.addEventListener("change", e => {
 });
 
 
-// Theme toggle (Light/Dark)
 
-themeToggle.addEventListener("click", () => {
-  document.body.classList.toggle("dark");
-
-  if (document.body.classList.contains("dark")) {
-    themeToggle.textContent = "Light Mode";
-  } else {
-    themeToggle.textContent = "Dark Mode";
-  }
-});
