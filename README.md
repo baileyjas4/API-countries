@@ -1,7 +1,7 @@
 # Where in the world
 
 #### A full-stack web application built as first project.
-<img src="/Users/jasminebailey/Desktop/Perscholas/jsLesson/APIcountries/rest-countries-api-with-color-theme-switcher-master/design/desktop-preview.jpg" alt="Project preview"/>
+<img src="./rest-countries-api-with-color-theme-switcher-master/design/desktop-preview.jpg" alt="Project preview"/>
 
 ## Description
 Complete the Frontend mentor challenge by building a fully responsive web application that allows users to view data for every country, filter results, search by name and also flip inbetween dark and light mode. This app is build off HTML, CSS, and javascript.
