@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded' ,() => {
   // i am checking my local storage for the theme
   const savedTheme = localStorage.getItem('theme');
   if (savedTheme === 'dark') {
-    body.classList.add('dark-mode');
+    document.body.classList.add('dark-mode');
   }
 
   //Determine which page we are on
